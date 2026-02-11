@@ -243,6 +243,12 @@ setTimeout(()=>d.remove(),3000);
 }
 
 </script>
+const music = document.getElementById("bgMusic");
+
+function startGame() {
+  music.volume = 0.4; // Orta ses
+  music.play();
+}
 
 <style>
 @keyframes fall{
@@ -253,3 +259,6 @@ setTimeout(()=>d.remove(),3000);
 
 </body>
 </html>
+<audio id="bgMusic" autoplay loop>
+  <source src="kontraa-no-sleep-hiphop-music-473847.mp3" type="audio/mpeg">
+</audio>
